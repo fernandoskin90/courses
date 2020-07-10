@@ -1,0 +1,24 @@
+.search {
+  display: flex;
+  align-items: center;
+  margin-left: 70px;
+  // margin-top: 20px;
+  // margin-bottom: 30px;
+  outline: none;
+  // width: 150px;
+  height: 80px;
+
+  svg {
+    margin-right: 10px;
+    fill: #0779e4;
+  }
+
+  input {
+    border: none;
+    box-shadow: 0 1px 1px 0 gray;
+    padding-bottom: 4px;
+    width: 250px;
+    color: gray;
+    outline: none;
+  }
+}

@@ -1,0 +1,78 @@
+.course {
+  // border: solid grey 1px;
+  box-shadow: 0 0 4px 2px lightgray;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  height: 350px;
+
+  &__header {
+    align-items: center;
+    background-color: #dee1e3;
+    box-shadow: 0 2px 3px 0 lightgray;
+    display: flex;
+    justify-content: flex-end;
+    height: 100px;
+    position: relative;
+  }
+
+  &__img {
+    left: 20px;
+    height: 100px;
+    position: absolute;
+    top: 20px;
+    width: 120px;
+  }
+
+  &__credits {
+    background-color: #fff;
+    border: 1px solid lightgray;
+    border-radius: 20px;
+    margin-right: 20px;
+    padding: 10px 40px;
+    text-transform: uppercase;
+  }
+
+  &__info {
+    display: grid;
+    grid-template-areas: 'title title' 'author author' 'price rating';
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 60px 40px 1fr;
+    height: 250px;
+    padding: 70px 25px 10px 25px;
+  }
+
+  &__title {
+    align-items: center;
+    display: flex;
+    font-size: 1.3rem;
+    font-weight: bold;
+    grid-area: title;
+  }
+
+  &__author {
+    align-items: center;
+    color: gray;
+    display: flex;
+    font-size: 0.9rem;
+    grid-area: author;
+  }
+
+  &__price,
+  &__rating {
+    align-items: flex-end;
+    display: flex;
+  }
+
+  &__price {
+    color: #3d6bad;
+    font-size: 1.6rem;
+    grid-area: price;
+    text-transform: uppercase;
+  }
+
+  &__rating {
+    grid-area: rating;
+    justify-self: end;
+  }
+}

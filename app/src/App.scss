@@ -1,0 +1,16 @@
+.App {
+  height: 100vh;
+
+  .content {
+    background-color: #f8fbfc;
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    padding: 10px 20px 10px 20px;
+    min-height: calc(100vh - 160px);
+  }
+
+  .viewer {
+    width: 100%;
+  }
+}
