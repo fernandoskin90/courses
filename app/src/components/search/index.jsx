@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import SearchIcon from '@material-ui/icons/Search';
+import PropTypes from 'prop-types';
 import './style.scss';
 
 export default function Search({ onSearch }) {
@@ -23,3 +24,7 @@ export default function Search({ onSearch }) {
     </div>
   );
 }
+
+Search.propTypes = {
+  onSearch: PropTypes.func.isRequired,
+};

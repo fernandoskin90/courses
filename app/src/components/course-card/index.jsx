@@ -1,5 +1,6 @@
 import React from 'react';
 import Rating from '@material-ui/lab/Rating';
+import PropTypes from 'prop-types';
 import './style.scss';
 
 const image =
@@ -29,3 +30,7 @@ export default function Course({ course }) {
     </div>
   );
 }
+
+Course.propTyes = {
+  course: PropTypes.object,
+};
