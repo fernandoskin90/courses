@@ -34,7 +34,7 @@ function App() {
         scrollObserver.disconnect();
       }
     };
-  }, []);
+  }, [scrollObserver]);
 
   return (
     <div className="App">
@@ -50,7 +50,7 @@ function App() {
         </>
       )}
       {loading && <Loading />}
-      {error && <p>{error}</p>}
+      {error && !loading && <p>{error}</p>}
       <div className="viewer" ref={viewerRef} />
     </div>
   );
