@@ -22,5 +22,3 @@ Inside the server folder you must run the following command in the console to ra
 ### Summary
 
 the project is created with [ReactJS]('https://reactjs.org/') using **Hooks** on the client side On the server side [NodeJS]('https://nodejs.org/en/docs/') and [ExpressJS]('https://expressjs.com/en/guide/routing.html') were used.
-
-A server was implemented because the API pairs cors problems to make the requests. Also the course list has a default image due to the API request problem.
