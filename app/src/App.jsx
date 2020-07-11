@@ -21,6 +21,7 @@ function App() {
     const options = {};
     const scrollCallback = (entries, observer) => {
       const entry = entries[0];
+      console.log({ next });
       if (entry.isIntersecting && !!next) {
         setOffset();
       }
@@ -56,5 +57,4 @@ function App() {
     </div>
   );
 }
-
 export default App;
