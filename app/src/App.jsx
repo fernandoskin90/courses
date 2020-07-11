@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useRef } from 'react';
 import './App.scss';
 
@@ -34,7 +35,7 @@ function App() {
         scrollObserver.disconnect();
       }
     };
-  }, [scrollObserver]);
+  }, []);
 
   return (
     <div className="App">
