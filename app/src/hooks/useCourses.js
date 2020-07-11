@@ -35,7 +35,6 @@ export function useCourses() {
       });
       const data = await resp.json();
       setNext(data.next);
-      setLoading(true);
       callback(data);
       setLoading(false);
     } catch (_) {
